@@ -42,7 +42,7 @@ def func_signup_btn_v1(self):
     # Click on sign_up button
     if xpath_sign_up_btn:
         element_btn = self.driver.find_element(By.XPATH, xpath_sign_up_btn)
-        element_btn.click()
+        element_btn.click() 
 
 
 def func_signup_btn_v2(self):
