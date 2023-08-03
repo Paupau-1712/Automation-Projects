@@ -53,7 +53,7 @@ def generate_data(num_entries):
     return data
 
 if __name__ == "__main__":
-    num_entries = 10  # Change this number to generate more or fewer entries
+    num_entries = 10000  # Change this number to generate more or fewer entries
     generated_data = generate_data(num_entries)
 
     # Save the data into a JSON file
