@@ -13,7 +13,7 @@ def func_signup_btn_v1(self):
         entry_email = data[0]['email']
 
     # Read XPath data from the JSON file
-    with open('../data/sign_up_xpath.json') as xpath_file:
+    with open(signup_data_path) as xpath_file:
         xpath_data = json.load(xpath_file)
 
     xpath_name = None
