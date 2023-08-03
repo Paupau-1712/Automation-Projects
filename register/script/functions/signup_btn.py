@@ -2,8 +2,6 @@ import json
 import json
 from selenium.webdriver.common.by import By
 
-
-
 def func_signup_btn_v1(self):
     # Read data from the JSON file
     with open('../data/signup_data.json') as json_file:
