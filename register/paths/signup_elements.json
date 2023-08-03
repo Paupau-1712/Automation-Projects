@@ -1,0 +1,102 @@
+[
+    {
+        "xpath": "//input[@id='password']",
+        "field_name": "password",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//select[@id='days']",
+        "field_name": "birthday",
+        "element_type": "select"
+    },
+    {
+        "xpath": "//select[@id='months']",
+        "field_name": "months",
+        "element_type": "select"
+    },
+    {
+        "xpath": "//select[@id='years']",
+        "field_name": "year",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='newsletter']",
+        "field_name": "newsletter",
+        "element_type": "select"
+    },
+    {
+        "xpath": "//input[@id='first_name']",
+        "field_name": "first_name",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='last_name']",
+        "field_name": "last_name",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='company']",
+        "field_name": "company",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='address1']",
+        "field_name": "address",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//select[@id='country']",
+        "field_name": "country",
+        "element_type": "selected"
+    },
+    {
+        "xpath": "//input[@id='state']",
+        "field_name": "state",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='city']",
+        "field_name": "city",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='zipcode']",
+        "field_name": "zip_code",
+        "element_type": "input"
+    },
+    {
+        "xpath": "//input[@id='mobile_number']",
+        "field_name": "mobile_number",
+        "element_type": "input"
+    },
+    {   "xpath": "//button[contains(text(),'Create Account')]",
+        "field_name": "create_btn",
+        "element_type": "button"
+    },
+    {   "xpath": "//b[contains(text(),'Account Created!')]",
+        "field_name": "account_created",
+        "element_type": "text"
+    },
+    {   "xpath": "//a[contains(text(),'Continue')]",
+        "field_name": "cont_button",
+        "element_type": "button"
+    },
+    {   "xpath": "//p[contains(text(),'Email Address already exist!')]",
+        "field_name": "email_exists",
+        "element_type": "text"
+    },
+    {
+        "xpath": "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]",
+        "field_name": "name",
+        "element_type": "text"
+    },
+    {
+        "xpath": "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]",
+        "field_name": "email",
+        "element_type": "text"
+    },
+    {   "xpath": "//button[contains(text(),'Signup')]",
+        "field_name": "sign_up_btn",
+        "element_type": "button"
+    }
+]

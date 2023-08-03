@@ -2,9 +2,12 @@ import json
 import json
 from selenium.webdriver.common.by import By
 
+elements_path ='register/paths/signup_elements.json'
+signup_data_path = 'register/data/signup_data.json'
+
 def func_signup_btn_v1(self):
     # Read data from the JSON file
-    with open('../data/signup_data.json') as json_file:
+    with open(signup_data_path) as json_file:
         data = json.load(json_file)
         entry_name = data[0]['name']
         entry_email = data[0]['email']
@@ -44,11 +47,11 @@ def func_signup_btn_v1(self):
 
 def func_signup_btn_v2(self):
     # Read data from the JSON file
-    with open('../data/signup_data.json') as json_file:
+    with open(signup_data_path) as json_file:
         data = json.load(json_file)[0]  # Load only the first set of data
 
     # Read XPath data from the JSON file
-    with open('../data/sign_up_xpath.json') as xpath_file:
+    with open(elements_path) as xpath_file:
         xpath_data = json.load(xpath_file)
 
     # Create a dictionary to map field names to XPaths
