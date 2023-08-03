@@ -1,0 +1,5 @@
+[
+   {"name_path" : "elements_path", "path" : "register/paths/signup_elements.json"},
+   {"name_path" : "signup_data_path", "path" : "register/data/signup_data.json"}
+
+]
