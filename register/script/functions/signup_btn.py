@@ -1,5 +1,4 @@
 import json
-import json
 from selenium.webdriver.common.by import By
 
 elements_path ='register/paths/signup_elements.json'
