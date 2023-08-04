@@ -1,5 +1,19 @@
 [
     {
+        "xpath": "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]",
+        "field_name": "name",
+        "element_type": "text"
+    },
+    {
+        "xpath": "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]",
+        "field_name": "email",
+        "element_type": "text"
+    },
+    {   "xpath": "//button[contains(text(),'Signup')]",
+        "field_name": "sign_up_btn",
+        "element_type": "button"
+    },
+    {
         "xpath": "//input[@id='password']",
         "field_name": "password",
         "element_type": "input"
@@ -84,19 +98,5 @@
     {   "xpath": "//p[contains(text(),'Email Address already exist!')]",
         "field_name": "email_exists",
         "element_type": "text"
-    },
-    {
-        "xpath": "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]",
-        "field_name": "name",
-        "element_type": "text"
-    },
-    {
-        "xpath": "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]",
-        "field_name": "email",
-        "element_type": "text"
-    },
-    {   "xpath": "//button[contains(text(),'Signup')]",
-        "field_name": "sign_up_btn",
-        "element_type": "button"
     }
 ]
