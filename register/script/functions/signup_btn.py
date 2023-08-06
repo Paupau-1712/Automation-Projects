@@ -12,7 +12,7 @@ def func_signup_btn_v1(self):
         entry_email = data[0]['email']
 
     # Read XPath data from the JSON file
-    with open(signup_data_path) as xpath_file:
+    with open(elements_path) as xpath_file:
         xpath_data = json.load(xpath_file)
 
     xpath_name = None
@@ -61,7 +61,7 @@ def func_signup_btn_v2(self):
 
     # Fill up the form using the obtained XPaths and data
     for field_name, xpath in xpath_dict.items():
-        if field_name in data:
+        if field_name in data: 
             element = self.driver.find_element(By.XPATH, xpath)
             field_value = data[field_name]
             element.send_keys(field_value)
