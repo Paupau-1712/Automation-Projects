@@ -6,7 +6,7 @@ signup_data_path = 'register/data/signup_data.json'
 
 def func_signup_btn_v1(self):
     # Read data from the JSON file
-    with open(signup_data_path) as json_file:
+    with open(signup_data_path, 'r') as json_file:
         data = json.load(json_file)
         entry_name = data[0]['name']
         entry_email = data[0]['email']

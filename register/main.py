@@ -2,7 +2,8 @@
 import unittest
 from selenium import webdriver
 
-from script.functions.signup_btn import func_signup_btn_v2
+from script.functions.signup_btn import func_signup_btn_v2, func_signup_btn_v1
+from script.functions.create_btn import func_create_btn_v1
 
 # Login Site
 login_site = "https://www.automationexercise.com/login"
@@ -19,10 +20,7 @@ class SignupTestPositive(unittest.TestCase):
     def test_signup_button(self):
         # Navigate to the signup page
         self.driver.get(login_site)
-        func_signup_btn_v2(self)
-        
-    def test_create_button(self):
-        self.driver.get(login_site)
+        func_signup_btn_v1(self)
 
     def tearDown(self):
         # Close the browser after completing the signup process
