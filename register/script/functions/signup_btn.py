@@ -65,9 +65,3 @@ def func_signup_btn_v2(self):
             element = self.driver.find_element(By.XPATH, xpath)
             field_value = data[field_name]
             element.send_keys(field_value)
-
-    # Click on the sign-up button
-    if 'sign_up_btn' in xpath_dict:
-        sign_up_btn_xpath = xpath_dict['sign_up_btn']
-        sign_up_btn = self.driver.find_element(By.XPATH, sign_up_btn_xpath)
-        sign_up_btn.click()

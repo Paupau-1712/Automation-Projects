@@ -1,4 +1,3 @@
-
 import unittest
 from selenium import webdriver
 
@@ -10,21 +9,27 @@ login_site = "https://www.automationexercise.com/login"
 logged_site = "https://www.automationexercise.com/"
 
 class SignupTestPositive(unittest.TestCase):
-
     def setUp(self):
         # Set up the webdriver for your preferred browser (e.g., Chrome)
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(30)
-        
+
     # Validate Signup Button with non-existing email
     def test_signup_button(self):
         # Navigate to the signup page
         self.driver.get(login_site)
         func_signup_btn_v1(self)
-
+        
+    def test_create(self):
+        # Navigate to the signup page
+        self.driver.get(login_site)
+        func_signup_btn_v1(self)
+        func_signup_btn_v2(self)
+        
     def tearDown(self):
         # Close the browser after completing the signup process
         self.driver.quit()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
