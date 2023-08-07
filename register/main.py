@@ -24,6 +24,7 @@ class SignupTestPositive(unittest.TestCase):
         # Navigate to the signup page
         self.driver.get(login_site)
         func_signup_btn_v1(self)
+        func_create_btn_v1(self)
         
     def tearDown(self):
         # Close the browser after completing the signup process
