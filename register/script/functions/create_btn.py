@@ -1,6 +1,10 @@
 import json
 from selenium.webdriver.common.by import By
 
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+
 elements_path ='register/paths/signup_elements.json'
 signup_data_path = 'register/data/signup_data.json'
 registered_data_path = 'register/registered-data/registered.json'
@@ -24,6 +28,7 @@ def func_create_btn_v1(self):
     for field_name, xpath in xpath_dict.items():
         if field_name in data:
             element = self.driver.find_element(By.XPATH, xpath)
+            WebDriverWait(self.driver, 10).until(EC.visibility_of(element))
             field_value = data[field_name]
             element.send_keys(field_value)
 
@@ -31,6 +36,7 @@ def func_create_btn_v1(self):
     if 'create_btn' in xpath_dict:
         create_btn_xpath = xpath_dict['create_btn']
         create_btn = self.driver.find_element(By.XPATH, create_btn_xpath)
+        WebDriverWait(self.driver, 10).until(EC.visibility_of(element))
         create_btn.click()
 
     # Add the 'registered' field to the data

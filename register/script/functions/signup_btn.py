@@ -1,6 +1,9 @@
 import json
 from selenium.webdriver.common.by import By
 
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 elements_path ='register/paths/signup_elements.json'
 signup_data_path = 'register/data/signup_data.json'
 
@@ -65,3 +68,10 @@ def func_signup_btn_v2(self):
             element = self.driver.find_element(By.XPATH, xpath)
             field_value = data[field_name]
             element.send_keys(field_value)
+            
+    # Click on the sign-up button
+    if 'sign_up_btn' in xpath_dict:
+        sign_up_btn_xpath = xpath_dict['sign_up_btn']
+        sign_up_btn = self.driver.find_element(By.XPATH, sign_up_btn_xpath)
+        WebDriverWait(self.driver, 10).until(EC.visibility_of(element))
+        sign_up_btn.click()
